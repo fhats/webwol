@@ -9,4 +9,5 @@ setup(name='webwol',
       scripts=['webwol.py'],
       url="https://github.com/fhats/webwol",
       description="Web-based WOL packet generator",
-      long_description=open("README").read())
+      data_files=["README.md"],
+      long_description=open("README.md").read())

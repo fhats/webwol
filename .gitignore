@@ -2,3 +2,4 @@
 !example-config.json
 *.pyc
 .tox
+MANIFEST
