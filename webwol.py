@@ -1,4 +1,18 @@
 #!/usr/bin/env python
+"""
+webwol
+
+Generates wake-on-lan packets via a web interface. Useful for WOL when you're on
+a different subnet, over a VPN, via an HTTP interface etc.
+
+A secondary goal of this tool is to minimize external dependencies required, so
+that deployment is trivial and can happen anywhere that Python can run. As a
+result, some of this code is nasty (see: HTML templating via string interpolation,
+manual response code generation, etc). This tradeoff is intentional, as the
+interface for this tool is designed to be as simple as possible and therefore
+can be a bit of a mess to create in the name of packaging and deployment
+simplicity.
+"""
 import argparse
 try:
     from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -16,7 +30,7 @@ except ImportError:
     from urllib import unquote
 
 
-# python3-compatible shim for checking if a thing is a strign
+# python3-compatible shim for checking if a thing is a string
 try:
     basestring
 except NameError:
