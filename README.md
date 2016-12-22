@@ -35,10 +35,11 @@ packets to. Give those puppies a name, too, cause why not? Do it like this:
 ```
 
 If you don't know the MAC address you want, try lookin' up how to do it on the
-[internet](http://www.wikihow.com/Find-the-MAC-Address-of-Your-Computer).
+[internet](http://www.wikihow.com/Find-the-MAC-Address-of-Your-Computer). There's
+another example about how to write this file [in this repo](https://github.com/fhats/webwol/blob/master/example-config.json)
 
 Save all them juicy bits in a file somewhere on the computer that webwol's gonna
-run on. You could put it in a place like /etc/webwol.json if you want. Or your
+run on. You could put it in a place like `/etc/webwol.json` if you want. Or your
 homedir. I won't judge.
 
 ## Run It
