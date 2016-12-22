@@ -1,0 +1,4 @@
+*.json
+!example-config.json
+*.pyc
+.tox
