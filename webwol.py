@@ -147,7 +147,7 @@ def build_webwol_request_handler(wol_config):
 def format_wol(mac):
     mac = "".join(mac.split(":"))
 
-    msg = "FFFFFFFFFFFF%s" % (mac*16)
+    msg = ("FFFFFFFFFFFF%s" % (mac*16)).encode('ascii')
     raw_msg = codecs.decode(msg, "hex_codec")
 
     return raw_msg
