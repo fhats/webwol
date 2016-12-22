@@ -148,7 +148,7 @@ def format_wol(mac):
     mac = "".join(mac.split(":"))
 
     msg = "FFFFFFFFFFFF%s" % (mac*16)
-    raw_msg = codecs.decode(msg, "hex")
+    raw_msg = codecs.decode(msg, "hex_codec")
 
     return raw_msg
 
