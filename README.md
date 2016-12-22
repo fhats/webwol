@@ -1,4 +1,4 @@
-!https://travis-ci.org/fhats/webwol.svg?branch=master!:https://travis-ci.org/fhats/webwol
+[![Build Status](https://travis-ci.org/fhats/webwol.svg?branch=master)](https://travis-ci.org/fhats/webwol)
 
 # webwol: Generate wake-on-lan packets via a web interface
 
