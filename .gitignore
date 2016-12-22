@@ -3,3 +3,7 @@
 *.pyc
 .tox
 MANIFEST
+DEBIAN
+build
+*.deb
+*.rpm
