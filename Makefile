@@ -1,6 +1,6 @@
 .PHONY: clean test
 
-dist: deb
+dist: deb rpm
 
 deb:
 	fpm -s dir -t deb \
