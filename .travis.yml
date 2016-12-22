@@ -13,12 +13,14 @@ install:
 script:
   - tox
   - make deb
+before_deploy:
+  - export RELEASE_PKG_FILE=$(ls *.deb)
+  - echo "deploying $RELEASE_PKG_FILE to GitHub releases"
 deploy:
   provider: releases
   api_key: '$GITHUB_API_KEY'
-  file:
-    - '*.deb'
-    - '*.rpm'
+  file_glob: true
+  file: "${RELEASE_PKG_FILE}"
   skip_cleanup: true
   on:
     tags: true
