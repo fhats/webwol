@@ -2,7 +2,7 @@
 from distutils.core import setup
 
 setup(name='webwol',
-      version='0.4',
+      version='0.5',
       author="Fred Hatfull",
       author_email="webwol@admiralfred.com",
       license="MIT",
